@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating <Form></Form></title>
+</head>
+<body>
+    
+        <link rel="stylesheet" href="./style.css"/> 
+<h1>Enter your Details for our  Dating Website</h1>
+    <form class="dating website" action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method: post enctype="multipart/form-data">
+<fieldset> 
+    <legend>Your Face </legend>
+    <label for="avatar">Upload your image: </label>
+    <input type="file" id="avatar" name="avatar" required > 
+    <div>
+    
+        <p>Image Preview:  </p>
+            
+            <img id="preview" width="500"> 
+       
+    </div>
+</fieldset>
+<fieldset>
+    <legend>
+        Your Details: 
+    
+    </legend>
+    <div>
+<label for="name">Name:</label> 
+   <input type="text" id="name" name="name" placeholder="your full name" required> 
+   
+    </div>
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="woman" name="gender" value="woman" required >
+        <label for="woman">Woman</label>
+        <input type="radio" id="male" name="gender" value="Male" required> 
+        <label for="Male">Male</label>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" max="50" min="18">
+     </div>
+     <div>
+         <label for="Date of birth">Date of Birth:</label>
+         <input type=""date id= "dob" name="dob"> 
+     </div>
+     <div> 
+         <label type="color" id="color" name="color">Favorite Color:</label>
+         <input for="color" id="color" name="color" > 
+ </div>
+ <div>
+     <label for="country"> Country:</label>
+     <select id="country" name="country">
+         <option value="brazil">Brazil</option>
+         <option value="France">France</option>
+         <option value="Japan"> Japan</option>
+         <option value="libya"> Libya</option>
+         <option value="USA">USA</option>
+         </select>
+
+ </div>
+ <div>
+     <label for="salary">Salary:</label>
+     <span class="range-caption">POOR</span>
+     <input type="range" id="salary" name="salary" min="0" max="100" value="50">
+     <span class="range-caption">RICH</span>
+
+ </div>
+</fieldset>
+<fieldset>
+    <legend>Your Contact Infomration</legend>
+ <label for="email">Email:</label>
+ <input type="text" id="email" name="email" placeholder="Email" required>
+ <div>
+    <label for="phonenumber">Phone Number</label>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required> 
+ </div>
+ <div>
+     <label for="Address">Address:</label>
+ <textarea cols="40" id="address" name="address"></textarea>
+ </div>
+<div>
+    <label for="contact method(s)"> Contact method(s):</label>
+    <input type="checkbox" name="contact" id="emailcheckbox" value="email">
+   <label for="email">Email</label>
+   <input type="checkbox" name="contact" id="phonecheckbox" value="phone">
+   <label for="Phone">Phone</label>
+    
+</div>
+</fieldset>
+<div>
+    <input type="submit">
+</div>
+    </form>
+    <script src="https://url.nucamp.co/datingjs"></script>
+</body>
+
+    </html> 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+
+
+
+   
